@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title Name -->
+    <title>Gallery</title>
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Image Gallery</h1>
+
+    <div class="img-gallery">
+        <img src="https://picsum.photos/id/13/200/300" onclick="fullviewimage(this.src)" />
+        <img src="https://picsum.photos/id/24/200/300" onclick="fullviewimage(this.src)" />
+        <img src="https://picsum.photos/id/45/200/300" onclick="fullviewimage(this.src)" />
+        
+    </div>
+    <div id="fullviewimage">
+        <img id="fullimage">
+        <span id="closebutton" onclick="closefullview()">x</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
